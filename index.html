@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riley's Portfolio</title>
+    <link rel="stylesheet" href="stylePC.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styleMobile.css" media="screen and (max-width: 767px)">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <h1>
+            <span>Welcome</span>
+            <span>to</span>
+            <span>Riley's</span>
+            <span>Portfolio</span>
+        </h1>
+        <p>Discover <a href="#projects">my projects</a> and experience in QA.</p>
+    </section>
+    
+
+    <section id="projects" class="project-grid">
+        <h2>Projects</h2><br>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card">
+                    <img src="https://playwright.dev/img/playwright-logo.svg" alt="Project Image">
+                    <h3>Playwright Project</h3>
+                    <p>Automated tests, using Playwright with Typescript.</p>
+                    <a href="https://github.com/rileyrab523/playwright_github_action" target="_blank">View on GitHub</a>
+                </div>
+                                <div class="swiper-slide card">
+                    <img src="postman.jpg" alt="Project Image">
+                    <h3>Postman Project</h3>
+                    <p>Automated API tests, using Postman and Javascript.</p>
+                    <a href="https://github.com/rileyrabtest-rgb/book-api-test" target="_blank">View on GitHub</a>
+                </div>
+                <div class="swiper-slide card">
+                    <img src="document-icon.png" alt="Project Image">
+                    <h3>Test plan</h3>
+                    <p>Example Test Plan I have made at my job.</p>
+                    <a href="test-plan.pdf" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about-me">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi! I'm Riley Barham. With over 3 years of experience as a QA Tester, I specialize in both manual and automated testing to ensure software quality and reliability. Proficient in a range of testing tools and frameworks, including Playwright, Selenium, Cypress for automation, and Postman for API testing. Demonstrated success in quality assurance, creating test plans and strategies, and developing comprehensive automated test cases. A quick learner, adept at applying the latest testing best practices and technologies to enhance project outcomes. Skilled in Agile methodologies as Scrum, with a strong track record of fostering teamwork and mentoring colleagues..</p>                    
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-info">
+        <h2>Contact Me</h2><br>
+        <p>Interested in collaborating or talking about potential opportunities?</p>
+        <a href="https://www.linkedin.com/in/riley-barham-b54265144" target="_blank">
+            <strong>Let's connect on LinkedIn!</strong>
+        </a>
+    </section>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
